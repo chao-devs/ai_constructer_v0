@@ -7,12 +7,10 @@
 <body>
   <h1>レポナビ（構成AI）</h1>
 
-
   <textarea id="theme" rows="5" cols="60" placeholder="レポートのテーマを入力してください"></textarea>
   <br><br>
 
   <button id="generateBtn">構成を生成する</button>
->>>>>>> 7b5cd19 (add static folder)
 
   <hr>
 
@@ -28,6 +26,7 @@
       result.textContent = "生成中...";
 
       try {
+
         const response = await fetch("https://ai-constructer-v0.onrender.com/structure", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
