@@ -90,3 +90,7 @@ def structure(data:Input):
             "saved":True
         }
     }
+
+@app.get("/")
+def home():
+    return {"message": "API is running!"}
