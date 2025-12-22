@@ -97,3 +97,5 @@ def structure(data:Input):
 @app.get("/")
 def home():
     return FileResponse("static/index.html")
+
+app.mount("/static", StaticFiles(directory="static"))
